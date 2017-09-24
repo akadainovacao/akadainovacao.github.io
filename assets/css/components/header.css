@@ -1,0 +1,32 @@
+/* color AKADA
+    orange - #F34604;
+    grey - #CCCCCC;
+    grey-1 #646c70;
+    grey-2 #303030; -- body
+*/
+.logo {
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.logo img {
+    max-height: 120px;
+}
+
+.logo h2 {
+    opacity: 0.5;
+}
+
+.info {
+    height: 320px;
+    text-align: center;
+}
+
+.info .contact {
+    position: relative;
+    top: 50%;
+}
+@media screen and (min-width: 768px) {
+
+}
