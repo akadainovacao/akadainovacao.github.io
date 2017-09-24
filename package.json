@@ -1,0 +1,24 @@
+{
+  "name": "akada-inivacao",
+  "version": "1.0.0",
+  "description": "As dependencias que estão aqui, são utilizadas em todo o projeto AKADA",
+  "main": "/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vincenzovgn@bitbucket.org/vincenzovgn/akada.git"
+  },
+  "author": "Vincenzo Grisorio Neto",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/vincenzovgn/akada#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.99.0",
+    "slick-carousel": "^1.6.0"
+  }
+}
