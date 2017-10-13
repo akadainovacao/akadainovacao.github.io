@@ -1,0 +1,96 @@
+.slider {
+	position: relative;
+	height: 300px;
+}
+
+.slick-list, .slick-track {
+	height: inherit;
+}
+
+.item-1 {
+	background-image: url(../../img/slider/developer1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.item-2 {
+	background-image: url(../../img/slider/developer2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.item-3 {
+	background-image: url(../../img/slider/developer3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.slider-title {
+	position: relative;
+}
+
+.slider-summary {
+	position: relative;
+	width: 40%;
+	left: 10%;
+}
+
+.slick-dots {
+	position: absolute;
+	top: 20%;
+	margin: 0;
+}
+
+button[id*=slick-slide-control] {
+	width: 45px;
+	height: 45px;
+	margin-left: 5px;
+	padding: 0;
+	border: 0;
+}
+
+#slick-slide-control00 {
+	background: url('../../img/icons/site-hotsite.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#slick-slide-control01 {
+	background: url('../../img/icons/marketing-digital.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#slick-slide-control02 {
+	background: url('../../img/icons/marketing-digital.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#slick-slide-control03 {
+	background: url('../../img/icons/marketing-digital.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+button[id*=slick-slide-control]:after {
+	content: 'Business Inteligence';
+    width: 144px;
+    height: 20px;
+    background: #f34604;
+    position: relative;
+    float: left;
+    left: 55px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+}

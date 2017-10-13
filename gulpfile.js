@@ -14,7 +14,8 @@ var paths = {
   resourceJs     : 'resource/scripts',
   resourceVendor : 'node_modules/',
   assetsCss      : 'assets/css', //  pasta assets são os arquivos gerados
-  assetsJs       : 'assets/js'
+  assetsJs       : 'assets/js',
+  assetsFonts       : 'assets/fonts',
 };
 
 var fileNames = {
@@ -36,13 +37,17 @@ var resourceFiles = {
   vendors : {
         js : [
              paths.resourceVendor + 'jquery/dist/jquery.js',
-             paths.resourceVendor + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+             //paths.resourceVendor + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+             paths.resourceVendor + 'materialize-css/dist/js/materialize.js',
+             paths.resourceVendor + 'slick-carousel/slick/slick.js',
+             paths.resourceVendor + 'animate-sass/animate.scss',
         ],
         css : [
             paths.resourceSass + 'vendors.scss'
         ],
         fonts: [
-            paths.resourceVendor + 'bootstrap-sass/assets/fonts/bootstrap/*',
+            paths.resourceVendor + 'materialize-css/dist/fonts/roboto/*',
+            //paths.resourceVendor + 'bootstrap-sass/assets/fonts/bootstrap/*',
         ]
     },
     watch : {
@@ -80,8 +85,20 @@ gulp.task('vendors:js', function() {
         .pipe(gulp.dest(paths.assetsJs));
 });
 
+gulp.task('fonts', function() {
+    gulp.src(resourceFiles.vendors.fonts)
+        .pipe(gulp.dest(paths.assetsFonts));
+ });
+
 gulp.task('sass:watch', function () {
   gulp.watch('resource/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'vendors:sass', 'scripts', 'vendors:js']);
+gulp.task('default', [
+  'sass', 
+  'vendors:sass', 
+  'scripts', 
+  'vendors:js', 
+  'fonts'
+  ]
+);

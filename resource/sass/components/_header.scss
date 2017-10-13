@@ -1,0 +1,131 @@
+/* color AKADA
+    orange - #F34604;
+    grey - #CCCCCC;
+    grey-1 #646c70;
+    grey-2 #303030; -- body
+*/
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;    
+    img {
+        max-height: 90px;
+    }
+
+    h2 {
+        opacity: 0.5;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+}
+
+.info {
+    height: 320px;
+    text-align: center;
+    
+    .contact {
+        position: relative;
+        top: 50%;
+    }
+}
+
+/* color AKADA
+    orange - #F34604;
+    grey - #CCCCCC;
+    grey-1 #646c70;
+    grey-2 #303030; -- body
+*/
+
+/* Menu bootstrap */
+.navbar {
+    background: none;
+    height: 90px;
+    margin: 5px 0 0 0;
+    border: none;
+    border-radius: 0;
+}
+.container-fluid {
+    height: inherit;
+    width: inherit;
+}
+
+.navbar-header {
+    height: inherit;
+}
+.navbar-default .navbar-toggle {
+    top: 25%;
+    border-color: #F34604;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #F34604; 
+}
+
+.navbar-brand {
+    height: inherit;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-brand img {
+    width: inherit;
+    height: inherit;
+    padding-bottom: 10px; 
+}
+
+.navbar .in {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav {
+    background: #F34604;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 -15px;
+}
+
+.navbar-default .navbar-collapse .navbar-nav a,
+.navbar-default .navbar-nav .open .dropdown-menu li a {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-collapse .navbar-nav li:hover {
+    background: #CCCCCC;
+}
+
+.navbar-default .navbar-collapse .navbar-nav a:hover {
+    color: #F34604;
+}
+
+.navbar-nav .open .dropdown-menu {
+    background: #F34604;
+    color: $brand-grey-dark;
+    padding: 0;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu li:hover,
+.navbar-default .navbar-nav .open .dropdown-menu li a:hover {
+    background: none;
+    color: $brand-grey-dark;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container-fluid {
+        padding: 0;
+    }
+
+    .navbar .navbar-header {
+        position: absolute;
+        padding: 0 15px;
+    }
+
+    .navbar .navbar-collapse {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
