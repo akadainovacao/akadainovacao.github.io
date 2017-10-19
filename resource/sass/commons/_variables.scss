@@ -32,17 +32,16 @@ $path-img: '../images';
 
 //======= Customizing Materialize css – changing default theme with Sass
 // 1. Colors
-// =====================================================================
-/*
-$primary-color
-$primary-color-light
-$primary-color-dark
+// ==========================================================================
 
-$secondary-color
-$success-color
-$error-color
-$link-color
-*/
+/*$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;*/
 
 // 3. Buttons
 // ==========================================================================
@@ -83,9 +82,9 @@ $button-floating-radius: 50% !default;
 // 13. Navigation Bar
 // ==========================================================================
 
-$navbar-height: 64px !default;
-$navbar-line-height: $navbar-height !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height: 90px !default;
+$navbar-line-height: $navbar-height/2 !default;
+$navbar-height-mobile: $navbar-height !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1rem !default;
 $navbar-font-color: #fff !default;
@@ -102,3 +101,21 @@ $h3-fontsize: $font-size-h3;
 $h4-fontsize: $font-size-h4;
 $h5-fontsize: $font-size-h5;
 $h6-fontsize: $font-size-h6;
+
+// 11. Global
+// ==========================================================================
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;

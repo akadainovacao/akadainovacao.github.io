@@ -2,6 +2,7 @@ footer {
 	position: relative;
 	background: $brand-orange;
 	color: #FFF;
+/* N0th1ng0ny0u */
 	/*min-height: 200px;*/
 }
 
@@ -15,12 +16,12 @@ footer {
 	display: none;
 }
 
-.footer-block {
+footer .row .footer-block {
 	border-right: 1px solid #727272;
-	min-height: 120px;
+	min-height: 150px;
 }
 
-.footer-block:last-child {
+footer .row .footer-block:last-child {
 	border: 0;
 }
 
@@ -65,4 +66,3 @@ footer {
 		display: block;
 	}
 }
-/* N0th1ng0ny0u */
