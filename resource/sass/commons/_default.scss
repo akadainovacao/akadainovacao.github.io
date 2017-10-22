@@ -2,7 +2,7 @@
     estilização app.blade.php
 */
 html, body {
-    background-color: $brand-grey-dark;
+    background-color: $color-grey-dark;
     /*color: #FFF;*/
     font-family: $default-font-family,'Lato', 'Raleway','Indie Flower', sans-serif, cursive;
     font-weight: 100;
@@ -11,4 +11,44 @@ html, body {
 @font-face {    
     font-family: "Minstrel";
     src: url("../fonts/MinstrelPosterNF.ttf");
+}
+
+
+.icon-small {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+@mixin text-style($color, $size) {
+	color: $color;
+	font-size: $size;
+}
+
+.content {
+	@include text-style($color-white, $font-size-base);
+}
+
+.info {
+	background-color: $color-black;
+	.container {
+		padding: 10px 0;
+	}
+}
+
+strong {
+	font-weight: 600;
+}
+
+.important {
+	color: $color-orange;
+}
+
+.text-upper {
+	text-transform: uppercase;
+}
+
+.text-upper-bold {
+	font-weight: 600;
+	text-transform: uppercase;
 }

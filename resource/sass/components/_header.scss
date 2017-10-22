@@ -8,7 +8,7 @@
 
 
 .menu {
-    background-color: $brand-grey-dark;
+    background-color: $color-grey-dark;
     .brand-logo {
         height: inherit;
         padding: 5px 10px;
@@ -28,7 +28,7 @@
     }
 
     #nav-mobile {
-        background: $brand-orange;
+        background: $color-orange;
         top: $navbar-line-height;
         position: relative;
         a {
@@ -54,7 +54,7 @@
 @media screen and (min-width: $min-screen-sm) {
     .menu {
         .brand-logo {
-            background-color: $brand-grey-dark;
+            background-color: $color-grey-dark;
         }
         .mobile-sidebar {
             display: none;

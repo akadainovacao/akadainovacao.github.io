@@ -1,1 +1,1 @@
-!function(n){n(function(){n(".button-collapse").sideNav()})}(jQuery);
+!function(i){i(function(){i(".slide").slick({slidesToScroll:1,dots:!0,infinite:!0,speed:500,fade:!0,cssEase:"linear",arrows:!1,autoplay:!0,autoplaySpeed:5e3}),i(".slide-item").each(function(){for(var e=0;e<i(".slide-item").length;e++)i("#slick-slide-control0"+e).addClass("tooltipped").data({position:"right",delay:"50",tooltip:"I am a tooltip"})})})}(jQuery);

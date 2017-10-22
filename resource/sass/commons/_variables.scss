@@ -7,13 +7,13 @@ $min-screen-md: 992px;
 $min-screen-lg: 1200px;
 
 // Default links colors
-$link-color: $brand-orange;
-$link-hover-color: $brand-orange;
+$link-color: $color-orange;
+$link-hover-color: $color-orange;
 
 // Default typography
 $font-size-small: 14px;
-$font-size-base: 16px;
-$font-size-large: 20px;
+$font-size-base: 18px;
+$font-size-large: 24px;
 $font-size-big: 32px;
 
 $font-size-h1: 32px;
@@ -44,11 +44,19 @@ $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;*/
 
+// 4. Cards
+// ==========================================================================
+
+$card-padding: 0 14px !default;
+$card-bg-color: transparent !default;
+$card-link-color: $link-color !default;
+$card-link-color-light: $color-grey-light !default;
+
 // 3. Buttons
 // ==========================================================================
 
 // Shared styles
-$button-background-focus: lighten($brand-grey-light, 4%) !default;
+$button-background-focus: lighten($color-grey-light, 4%) !default;
 $button-font-size: 1rem !default;
 $button-icon-font-size: 1.3rem !default;
 $button-height: 36px !default;
@@ -60,7 +68,7 @@ $button-disabled-background: #DFDFDF !default;
 $button-disabled-color: #9F9F9F !default;
 
 // Raised buttons
-$button-raised-background: $brand-grey-light !default;
+$button-raised-background: $color-grey-light !default;
 $button-raised-background-hover: lighten($button-raised-background, 5%) !default;
 $button-raised-color: #fff !default;
 
@@ -73,12 +81,12 @@ $button-flat-color: #343434 !default;
 $button-flat-disabled-color: lighten(#999, 10%) !default;
 
 // Floating buttons
-$button-floating-background: $brand-grey-light !default;
+$button-floating-background: $color-grey-light !default;
 $button-floating-background-hover: $button-floating-background !default;
 $button-floating-color: #fff !default;
 $button-floating-size: 40px !default;
 $button-floating-large-size: 56px !default;
-$button-floating-radius: 50% !default;
+$button-floating-radius: 30% !default;
 
 // 13. Navigation Bar
 // ==========================================================================
