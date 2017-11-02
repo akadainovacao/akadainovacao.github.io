@@ -13,6 +13,14 @@ html, body {
     src: url("../fonts/MinstrelPosterNF.ttf");
 }
 
+@mixin text-style($color, $size) {
+	color: $color;
+	font-size: $size;
+}
+
+p {
+	@include text-style($color-grey-dark, $font-size-base);
+}
 
 .icon-small {
 	width: 40px;
@@ -20,21 +28,7 @@ html, body {
 	border-radius: 5px;
 }
 
-@mixin text-style($color, $size) {
-	color: $color;
-	font-size: $size;
-}
 
-.content {
-	@include text-style($color-white, $font-size-base);
-}
-
-.info {
-	background-color: $color-black;
-	.container {
-		padding: 10px 0;
-	}
-}
 
 strong {
 	font-weight: 600;
@@ -51,4 +45,32 @@ strong {
 .text-upper-bold {
 	font-weight: 600;
 	text-transform: uppercase;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.float-none {
+	float: none;
+}
+
+.image-left {
+    float: left;
+    border-right: 2px solid #CCCCCC;
+    margin-right: 5px;
+    padding-right: 5px
+}
+
+.image-block {
+	display: inline-block;
+	width: 350px;
+	height: 150px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: inherit;
+    height: inherit;
 }
