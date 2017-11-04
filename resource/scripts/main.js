@@ -1,6 +1,15 @@
 (function($){
   $(function(){
 
+  	$(".button-collapse").sideNav({
+  		closeOnClick: true,
+  	});
+  	$(".close").on("click", function() {
+  		$('.side-nav').css({"transform":"translateX(-100%)"});
+  		$('body').removeAttr('style');
+  		// console.log('é isso ai');
+  	});
+  	
 	$(".slide").slick({
 		slidesToScroll: 1,
 		dots: true,

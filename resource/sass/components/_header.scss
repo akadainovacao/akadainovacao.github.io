@@ -49,6 +49,16 @@
             left: -30px;
         }
     }
+    .side-nav {
+        .close {
+            padding: 0;
+            .material-icons {
+                width: 100%;
+                margin: 0;
+                font-size: 36px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: $min-screen-sm) {
@@ -56,14 +66,16 @@
         .brand-logo {
             background-color: $color-grey-dark;
         }
-        .mobile-sidebar {
+        /*.mobile-sidebar {
             display: none;
-        }
+        }*/
     }
 }
 
 @media screen and (min-width: $min-screen-md) {
-    .mobile-sidebar {
-        display: none;
+    .menu {
+        .mobile-sidebar {
+            display: none;
+        }
     }
 }
