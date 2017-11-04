@@ -1,7 +1,14 @@
 .contact {
+	display: none;
 	position: absolute;
 	right: 30px;
 	top: 0;
 	color: $color-white;
 	line-height: 1;
+}
+
+@media screen and (min-width: $min-screen-md) {
+	.contact {
+		display: block;
+	}
 }

@@ -1,0 +1,21 @@
+.institucional {
+	.bg-img-institucional {
+		background-image: url('../img/bg-img-institucional.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 120px;
+		max-height: 120px;
+		padding: 20px;
+	}
+}
+
+.ecommerce {
+	.packages {
+		@include flexbox();
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		.image-block-sm {
+			@include flex(1);
+		}
+	}
+}

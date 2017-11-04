@@ -1,4 +1,4 @@
-/*@import 'utils/reset';*/
+@import 'mixins/flexbox';
 @import 'commons/variables';
 @import 'commons/default';
 
@@ -9,3 +9,4 @@
 @import 'components/contact';
 @import 'components/slide';
 @import 'components/cards';
+@import 'components/sites-hotsites';
