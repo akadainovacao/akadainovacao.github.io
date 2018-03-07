@@ -13,15 +13,13 @@
   "author": "Vincenzo Grisorio Neto",
   "license": "ISC",
   "homepage": "https://bitbucket.org/vincenzovgn/akada#readme",
-  "dependencies": {
+  "devDependencies": {
+    "animate-sass": "^0.6.6",
     "animate.css": "^3.5.2",
+    "bootstrap": "^4.0.0",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "materialize-css": "^0.99.0",
-    "slick-carousel": "^1.6.0"
-  },
-  "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
@@ -29,6 +27,12 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "jquery": "^3.3.1",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^0.99.0",
+    "popper.js": "^1.12.9",
+    "pump": "^3.0.0",
+    "slick-carousel": "^1.7.1"
   }
 }

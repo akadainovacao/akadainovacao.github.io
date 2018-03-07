@@ -1,0 +1,86 @@
+
+// Color web site
+$color-white  : #FFFFFF;
+$color-black  : #000000;
+$color-gray   : #BBBBBB;
+$color-blue1  : #2D8ACA;
+$color-blue2  : #205A8F;
+$color-blue3  : #101E45;
+
+// 1. Change colors Materialize
+// ==========================================================================
+
+$primary-color: $color-blue1 !default;
+$primary-color-light: $color-blue1 !default;
+$primary-color-dark: $color-blue3 !default;
+
+$link-color: $color-blue1 !default;
+
+// Font-face
+// ==========================================================================
+
+@font-face {
+	font-family: 'LatoLight';
+	src: url('../fonts/Lato/Lato-Light.ttf');
+}
+
+@font-face {
+	font-family: 'LatoLightItalic';
+	src: url('../fonts/Lato/Lato-LightItalic.ttf');
+}
+
+@font-face {
+	font-family: 'LatoRegular';
+	src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'LatoRegularItalic';
+	src: url('../fonts/Lato/Lato-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'LatoBold';
+	src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'LatoBoldItalic';
+	src: url('../fonts/Lato/Lato-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: 'LatoBlackItalic';
+	src: url('../fonts/Lato/Lato-BlackItalic.ttf');
+}
+
+@font-face {
+	font-family: "Material Icons";
+	src: url("../fonts/MaterialIcons/MaterialIcons-Regular.ttf"),
+			 url("../fonts/MaterialIcons/MaterialIcons-Regular.ttf") format('truetype'),
+			 url("../fonts/MaterialIcons/MaterialIcons-Regular.woff") format('woff'),
+			 url("../fonts/MaterialIcons/MaterialIcons-Regular.woff2") format('woff2');
+}
+
+$lato-regular: 'LatoRegular',  Helvetica, Arial, sans-serif;
+$lato-bold: 'LatoBold',  Helvetica, Arial, sans-serif;
+$lato-light: 'LatoLight',  Helvetica, Arial, sans-serif;
+
+// Header Styles
+body {
+	font-family: $lato-regular;
+	h1 { margin: 0; }
+	h2 { margin: 0; }
+	h3 { margin: 0; }
+	h4 { color: $color-blue1; margin: 0; }
+	h5 { margin: 0; }
+	h6 { color: $color-blue1; margin: 0; }
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+// Photo slider
+$slider-indicator-color: $primary-color !default;

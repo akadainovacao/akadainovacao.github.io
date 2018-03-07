@@ -1,0 +1,14 @@
+.trainings {
+	.overview {
+		margin: 20px 0;
+	}
+
+	.card {
+		.card-action {
+			background: $color-blue1;
+			a {
+				color: $color-white !important;
+			}
+		}
+	}
+}
