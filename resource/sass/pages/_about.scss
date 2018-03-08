@@ -6,10 +6,21 @@
 		p {
 			text-align: left;
 		}
-		img {
+		.img-responsive {
+			max-width: 100%;
+			height: auto;
+			transition: all 4s ease-in;
+		}
+		@media screen and (min-width: 600px) {
+			.img-responsive {
+				width: 75%;
+				transition: all 4s ease-in;
+			}
+		}
+		/*img {
 			width: 750px;
 			height: 420px;
-		}
+		}*/
 	}
 	.border-bottom {
 		color: $color-white;
