@@ -1,16 +1,13 @@
 $(document).ready(function(){
 
-	$('.mobile-sidebar').sideNav();
+	$('.mobile-sidebar').sideNav({
+    closeOnClick: true,
+    menuWidth: 250,
+  });
 
-  	$('.slider').slider({
-  		'height' : 250,
-  	});
+	$('.slider').slider({
+		'height' : 250,
+	});
 
-  	$('.parallax').parallax();
-
-  	$(".close").on("click", function() {
-  		$('.side-nav').css({"transform":"translateX(-100%)"});
-  		$('body').removeAttr('style');
-  		// console.log('é isso ai');
-  	});
+	$('.parallax').parallax();
 });

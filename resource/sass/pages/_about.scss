@@ -1,21 +1,21 @@
 // page about
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	transition: all 4s ease-in;
+}
+@media screen and (min-width: 600px) {
+	.img-responsive {
+		width: 75%;
+		transition: all 4s ease-in;
+	}
+}
 .about {
 	.aboutus {
 		margin: 20px 0;
 		text-align: center;
 		p {
 			text-align: left;
-		}
-		.img-responsive {
-			max-width: 100%;
-			height: auto;
-			transition: all 4s ease-in;
-		}
-		@media screen and (min-width: 600px) {
-			.img-responsive {
-				width: 75%;
-				transition: all 4s ease-in;
-			}
 		}
 		/*img {
 			width: 750px;
@@ -34,10 +34,6 @@
 	}
 	.competency {
 		margin: 20px 0;
-		img {
-			width: 435px;
-			height: 275px;
-		}
 	}
 
 	.case {
