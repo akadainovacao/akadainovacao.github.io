@@ -34,5 +34,8 @@
     "popper.js": "^1.12.9",
     "pump": "^3.0.0",
     "slick-carousel": "^1.7.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.8.3"
   }
 }
